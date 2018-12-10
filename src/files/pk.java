@@ -32,9 +32,9 @@ public class pk implements Runnable {
 			System.out.print(str);
 			do {
 				i = in1.read(buff);
-				// if (i > 0) {
-				// System.out.print(new String(buff, 0, i));
-				// }
+				 if (i > 0) {
+				 System.out.print(new String(buff, 0, i));
+				 }
 				if (i < length)
 					break;
 			} while (true);
