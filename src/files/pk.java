@@ -23,6 +23,7 @@ public class pk implements Runnable {
 	public void run() {
 		int length = 100;
 		try {
+			long sk=System.currentTimeMillis();
 			// s.setSoTimeout(1000);
 			InputStream in1 = s.getInputStream();
 			byte[] buff = new byte[length];
@@ -53,7 +54,8 @@ public class pk implements Runnable {
 			if (fl.isFile())
 				showfile(fl, out, str);
 			s.close();
-
+			sk=System.currentTimeMillis()-sk;
+			System.out.println("end +"+sk);
 		} catch (Exception e) {
 
 			try {
