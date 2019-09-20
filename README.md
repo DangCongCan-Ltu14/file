@@ -1,4 +1,4 @@
 # file
 <br>demo  file server
-#su dung giao thuc http
-#co http request
+<br>su dung giao thuc http
+<br>co http request
